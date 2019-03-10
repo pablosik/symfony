@@ -14,7 +14,4 @@ install: composer install
 script: phpunit --configuration phpunit.xml.dist --coverage-text
 
 after_success:
-    - |
-      if [[ $TRAVIS_BRANCH == "master" && $TRAVIS_PULL_REQUEST == "false" ]]; then
-        echo "master"
-      fi
+    - ./success.sh
