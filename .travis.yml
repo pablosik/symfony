@@ -12,3 +12,5 @@ matrix:
 before_script: composer install
 
 script: phpunit --configuration phpunit.xml.dist --coverage-text
+
+after_success: echo "symfony build success"
