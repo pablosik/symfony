@@ -16,4 +16,4 @@ script: phpunit --configuration phpunit.xml.dist --coverage-text
 after_success:
     - echo "symfony build success"
     - ls -al
-    - echo $TRAVIS_TEST_RESULT
+    - echo ${TRAVIS_TEST_RESULT}
